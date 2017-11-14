@@ -1,9 +1,9 @@
-# Starter Kit for [Building Applications in React and Redux in ES6](http://www.pluralsight.com/author/cory-house) on Pluralsight
+# Starter Kit for a React Single-Page Application (SPA) using Redux and React-Router
 
 ## Get Started
 1. **Install [Node 6](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
-2. **Clone this repository.** - `git clone https://github.com/coryhouse/pluralsight-redux-starter.git` or [download the zip](https://github.com/coryhouse/pluralsight-redux-starter/archive/master.zip)
-3. **Make sure you're in the directory you just created.** - `cd pluralsight-redux-starter`
+2. **Clone this repository.** - `git clone https://github.com/frank-martinez-27/react-redux-spa-seed` or [download the zip](https://github.com/frank-martinez-27/react-redux-spa-seed/archive/master.zip)
+3. **Make sure you're in the directory you just created.** - `cd react-redux-spa-seed`
 4. **Install Node Packages.** - `npm install`
 5. **Run the app.** - `npm start -s`
 This will run the automated build process, start up a webserver, and open the application in your default browser. When doing development with this kit, this command will continue watching files all your files. Every time you hit save the code is rebuilt, linting runs, and tests run automatically. Note: The -s flag is optional. It enables silent mode which suppresses unnecessary messages during the build.
@@ -17,13 +17,12 @@ This will run the automated build process, start up a webserver, and open the ap
 3. Make sure you're running the latest version of Node. Or, use [Node 5.12.0](https://nodejs.org/download/release/v5.12.0/) if you're having issues on Windows. Node 6 has issues on some Windows machines.
 4. Make sure files with names that begin with a dot (.babelrc, .editorconfig, .eslintrc) are copied to the project directory root. This is easy to overlook if you copy this repository manually.
 5. Don't run the project from a symbolic link. It will cause issues with file watches.
-6. Use path.resolve on all path references in both the dev and prod webpack.config. [See this commit](https://github.com/coryhouse/pluralsight-redux-starter/commit/298848d4332d3bec9eb4e23592e710083acaf340) for an example.
-7. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules defined in the course.
-8. On Windows? Open your console as an administrator. This will assure the console has the necessary rights to perform installs.
-9. Try using your OS's native command line instead of an editor's. For some people, an editor's command line configuration may cause issues. 
-10. Ensure you do not have NODE_ENV=production in your env variables as it will not install the devDependencies. To check run this on the command line: `set NODE_ENV`. If it comes back as production, you need to clear this env variable.
-11. Make sure you're using the same imports as the course demo. I've seen some people import ES6 code from node_modules via different imports like `import Route from "react-router/es6/Route";` and `import IndexRoute from "react-router/es6/IndexRoute";`. Don't do that. :) Use the exact imports I use in the course.
-12. Nothing above work? Delete your node_modules folder and re-run npm install.
+6. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules defined in the course.
+7. On Windows? Open your console as an administrator. This will assure the console has the necessary rights to perform installs.
+8. Try using your OS's native command line instead of an editor's. For some people, an editor's command line configuration may cause issues. 
+9. Ensure you do not have NODE_ENV=production in your env variables as it will not install the devDependencies. To check run this on the command line: `set NODE_ENV`. If it comes back as production, you need to clear this env variable.
+10. Make sure you're using the same imports as the course demo. I've seen some people import ES6 code from node_modules via different imports like `import Route from "react-router/es6/Route";` and `import IndexRoute from "react-router/es6/IndexRoute";`. Don't do that. :) Use the exact imports I use in the course.
+11. Nothing above work? Delete your node_modules folder and re-run npm install.
 
 ### Production Dependencies
 | **Dependency** | **Use** |
@@ -34,7 +33,7 @@ This will run the automated build process, start up a webserver, and open the ap
 |react|React library |
 |react-dom|React library for DOM rendering |
 |react-redux|Redux library for connecting React components to Redux |
-|react-router|React library for routing |
+|react-router-dom|React library for routing |
 |react-router-redux|Keep React Router in sync with Redux application state|
 |redux|Library for unidirectional data flows |
 |redux-thunk|Async redux library|
@@ -47,7 +46,7 @@ This will run the automated build process, start up a webserver, and open the ap
 |babel-core|Babel Core for transpiling the new JavaScript to old |
 |babel-loader|Adds Babel support to Webpack |
 |babel-plugin-react-display-name| Add displayName to React.createClass calls |
-|babel-preset-es2015|Babel preset for ES2015|
+|babel-preset-env|Babel preset for ES2015 and ESNext|
 |babel-preset-react| Add JSX support to Babel |
 |babel-preset-react-hmre|Hot reloading preset for Babel|
 |babel-register|Register Babel to transpile our Mocha tests|
