@@ -9,15 +9,6 @@ export const routes = [
   { path: '/home', component: HomePage },
   { path: '/about', component: AboutPage },
   { path: '/courses', component: CoursesPage }
-  /* {
-    path: '/about/:id', component: AboutPage,
-    routes: [
-      {
-        path: '/about/:id/home',
-        component: HomePage
-      }
-    ]
-  } */
 ];
 
 export const RouteWithSubRoutes = (route) => (

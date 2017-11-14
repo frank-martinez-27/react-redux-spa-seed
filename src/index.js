@@ -10,8 +10,6 @@ import { Provider } from 'react-redux';
 import {loadCourses} from './components/actions/courseActions';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './styles/sb-admin.css';
-import './styles/plugins/morris.css';
 import './styles/font-awesome/css/font-awesome.min.css';
 import './styles/styles.css';
 
